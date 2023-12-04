@@ -1,0 +1,122 @@
+Seccion 2 - - - - Etiquetas para el html semantico - - - - 
+
+<header>: Se utiliza para incluir contenido introductorio o de navegación en la
+parte superior de una página como el logo del sitio, el título de la página, el
+menú de navegación y otros elementos relacionados con su identidad.
+
+<nav>: Se utiliza para definir una sección de navegación dentro de un sitio
+web. Suele contener enlaces a otras páginas o secciones del mismo sitio.
+
+<main>: Se utiliza para envolver el contenido principal de la página
+excluyendo encabezados, pies de página, barras laterales u otras secciones.
+Ayuda a los usuarios a enfocarse en la información más relevante. Es
+importante tener en cuenta que solo debe haber un elemento <main> por
+documento HTML.
+
+<article>: Se utiliza para identificar una sección independiente o autónoma de
+contenido dentro de un documento. Por ejemplo, puede ser utilizado para un
+artículo de noticias, una publicación de blog o un comentario.
+
+<section>: Se utiliza para agrupar contenido relacionado dentro de un
+documento. Puede ser utilizado para dividir el contenido en diferentes
+secciones temáticas o para organizar el contenido en una página.
+
+<aside>: Se utiliza para marcar el contenido relacionado pero no esencial
+para el flujo principal del documento. Puede contener información adicional
+como publicidad, enlaces relacionados, citas o elementos destacados.
+
+<footer>: Se utiliza para incluir información de contacto, enlaces relacionados,
+derechos de autor y otros elementos que suelen ubicarse en la parte inferior
+de una página. Proporciona una ubicación específica para la información de
+cierre.
+
+<div>: Etiqueta general funciona en bloque (Ocupa toda una seccion de codigo)
+
+<span>: Etiquta general funciona en linea (NO ocupa toda la seccionn de un codigo), va dentro de una etiqueta generalmente
+
+Seccion 4 - - - - Selectores en CSS - - - -
+
+Selector Universal: Selecciona TODOS los elementos de la pagina
+ *{
+
+}
+
+Selector Etiqueta: Selecciona TODOS los elementos de la pagina que tengan esa misma etiqueta,
+En este caso llama a todos las etiquetas parrafo.
+ p {
+
+ }
+
+ Selector de Clases:Para no tener que llamar TODOOOOS los parrafos, 
+ solo el que tiene la clase "destacado" en este caso. Sirve para re utilizar estilos
+
+ HTML
+  <p class="destacado"> Párrafo 1</p>
+
+ CSS
+
+ .destacado {
+font-size: 15px;
+}
+
+Selector de ID:
+Sirve solo para identificar UN SOLO ELEMENTO, la clase se le puede poner a varios elementos
+
+PseudoClase:
+Segun el  estado es como puede cambiar una caracteristica.
+
+● hover: Se aplica cuando el cursor del mouse se coloca sobre un elemento, 
+generalmente utilizado para proporcionar retroalimentación visual al usuario.
+● active: Se aplica cuando un elemento es activado, como cuando se hace clic
+en un enlace o un botón.
+● focus: Se aplica cuando un elemento obtiene el foco, como cuando se
+selecciona mediante la navegación del teclado.
+● first-child: Se aplica al primer elemento hijo de su elemento padre.
+● last-child: Se aplica al último elemento hijo de su elemento padre.
+● nth-child(): Se aplica a elementos específicos basados en su posición en la
+jerarquía de su elemento padre, utilizando una fórmula matemática.
+● nth-of-type(): Similar a :nth-child(), pero selecciona elementos específicos
+basados en su tipo en lugar de su posición.
+● not(): Se utiliza para seleccionar elementos que no coinciden con un selector
+dado.
+
+Elementos Padre-Hijo: Se usan para dar propiedades a solo el elemento que esta contenido
+en otro.
+
+elemento-padre elemento-hijo 
+{
+/* Estilos que se aplicarán al elemento hijo */
+}
+
+Especifidad:
+Decision que se toma en un hoja de Estilos.
+
+1. Número de IDs en el selector: Cada ID en un selector suma 100 puntos a la
+especificidad.
+2. Número de clases, atributos y pseudoclases en el selector: Cada clase,
+atributo o pseudoclase suma 10 puntos.
+3. Número de elementos y pseudoelementos en el selector: Cada elemento
+HTML o pseudoelemento suma 1 punto.
+4. Importancia del estilo: Si se utiliza !important en una regla, esto otorga un
+alto nivel de especificidad, anulando la mayoría de las reglas.
+
+---------------- Dudas ------------------
+Al hacer uso de un selector de etiqueta o uno Universal, si yo luego 
+hago uso de una clase que pasa con el selector toma la etiqueta sin 
+importar la clase, ¿Existe un sistema?
+¿Si hago uso de llamar una clase pero luego la vuelvo a llamar 
+la anterior queda obsoleta?
+
+
+
+
+Expresiones regulares en javascript
+^ indica que el patrón debe iniciar con los caracteres dentro de los corchetes
+
+[A-Z] indica que los caracteres admitidos son letras del alfabeto
+
++ indica que los caracteres dentro de los corchetes se pueden repetir
+
+$ indica que el patrón finaliza con los caracteres que están dentro de los corchetes.
+
+i indica que validaremos letras mayúsculas y minúsculas (case-insensitive)

@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.patient-table {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%; /* Ancho completo dentro del contenedor */
+    border-collapse: collapse; /* Elimina el espacio entre bordes de celdas */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Bordes para cada celda */
+    padding: 8px; /* Espaciado dentro de las celdas */
+    text-align: left; /* Alineación del texto */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo para filas alternas */
+}
+
+tr:hover {
+    background-color: #ddd; /* Color de fondo al pasar el mouse sobre una fila */
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50; /* Color de fondo para los encabezados */
+    color: white; /* Color de texto para los encabezados */
+}

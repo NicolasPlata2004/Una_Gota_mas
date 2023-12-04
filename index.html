@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una gota más</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Linkear la imagen para cambiar el icono-->
+    <link rel="icon" type="image/png" href="img/Gota.png">
+    <script src="Script.js" defer></script>
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+            <div class="brazo">
+                <img src="img/Gota.png" width="100px" height="100px">
+                <h1 id="Titulo_Principal">Una gota más</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">    
+        <i class="fa-solid fa-bars"></i>
+        </label>
+                <ul id="Lista1">
+                    <li><a href="login.html">Agenda tu cita</a></li>
+                    <li><a href="Funcionarios_login.html" target="_blank">Funcionarios</a></li>
+                    <li><a href=#datos-de-contacto>Invitar</a></li>
+                    <li><a href="requisitos_donacion.html" target="_blank">información</a></li>
+                </ul>  
+            </nav>  
+
+        </header>
+
+    
+    <main>
+        <div class="cards"> 
+        <div class="card">
+            <div>
+                <center><img id="img_card" src="img/Sofia.jpg"></center>
+            </div>
+            <div class="content">
+                <h2>Tu Donación de Sangre Salva Vidas como la de Sofía</h2>
+                <p>
+                    Querido amigo, Cada gota de sangre que donas es una chispa de esperanza. 
+                    Gracias a personas como tú, Sofía superó una enfermedad y ahora juega 
+                    felizmente con su hermana Marta. Tu donación crea estos momentos. 
+                </p>
+            </div>
+            <div class="Tarjetaa">
+                <span class="ver"><a>¡Únete a nosotros!</a></span>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <center><img id="img_card" src="img/Jose.webp"></center>
+            </div>
+            <div class="content">
+                <h2>Tu Donación de Sangre Salvó a José</h2>
+                <p>
+                    Querido amigo, José sobrevivió a un grave accidente gracias a donaciones 
+                    de sanagre como la tuya. Ahora disfruta de su familia. Tu generosidad 
+                    marca la diferencia. 
+                </p>
+            </div>
+            <div class="Tarjetaa">
+                <span><a>¡Únete a nosotros!</a></span>
+            </div>
+        </div>  
+
+        <div class="card">
+            <div>
+                <center><img id="img_card" src="img/Viejitos.jpg"></center>
+            </div>
+            <div class="content">
+                <h2>Tu Donación de Sangre Cambió Vidas Como la de Roberto</h2>
+                <p>
+                    Querido amigo, Un infarto puso en peligro la vida de este anciano,
+                    pero gracias a donaciones de sangre como la tuya, pudo superarlo. 
+                    Ahora, junto a su esposa Josefina, fundaron un orfanato. 
+                    Tu generosidad hace posible estas historias de amor y esperanza.
+                </p>
+            </div>
+            <div class="Tarjetaa">
+                <span><a>¡Únete a nosotros!</a></span>
+            </div> 
+        </div>
+            
+
+        </div>
+    </main>
+
+    <section>
+        <div class="Padre_informacion">
+            <div class="informacion">
+                <img class="Yo" src="img/Yo.webp">
+                <h3>Acerca de nosotros</h3>
+                <p>¡Bienvenido a nuestra página web! Nuestros nombres son Nicolás Plata, 
+                    Oscar Jhondairo, Juan Manuel Beltran estudiantes de Ingeniería Mecatrónica. 
+                    Nuestro objetivo con esta pagina web es facilitar un poco la magnifica labor
+                    de todos aquellos donantes de sangre y ayudar a todos aquellos pacientes
+                    que en circustancias de vida o muerte necesitan que esto sea mas rapido.</p>
+            </div>
+        </div>
+
+        <img class="Descripcion" src="img/baner.png" width="100%">
+    </section>
+<div class="El_Formulario">
+<h1>Agenta tu cita</h1>
+    <p><em>¡Ayudanos a salvar una vida mas!</em></p>
+
+    <form action="" method="get" class="formulario" id="form">
+
+        <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" />
+        </div>
+        <div class="form-row">
+            <label for="email">Email</label>
+            <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="pepe@gmail.com"
+            
+            required
+            />
+            <!-- Con required solo ya manda alerta si el campo no es rellanado con un nombre -->
+        </div>
+        <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+        </div>
+        <div class="form-row">
+            <label for="pais">Departamento:</label>
+            <select id="pais" name="pais">
+                <option value="Colombia">Amazonas</option>
+                <option value="Colombia">Antioquia</option>
+                <option value="Colombia">Arauca</option>
+                <option value="Colombia">Bogotá</option>
+                <option value="Colombia">Bolívar</option>
+                <option value="Colombia">Boyacá</option>
+                <option value="Colombia">Caldas</option>
+                <option value="Colombia">Caquetá</option>
+                <option value="Colombia">Casanare</option>
+                <option value="Colombia">Cauca</option>
+                <option value="Colombia">Cesar</option>
+                <option value="Colombia">Chocó</option>
+                <option value="Colombia">Bolívar</option>
+                <option value="Colombia">Bolívar</option>
+                <option value="Colombia">Bolívar</option>
+                <option value="Colombia">Bolívar</option>
+                <option value="Colombia">Bolívar</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Cundinamarca">Cundinamarca</option>
+                <option value="Guainía">Guainía</option>
+                <option value="Guaviare">Guaviare</option>
+                <option value="Huila">Huila</option>
+                <option value="La Guajira">La Guajira</option>
+                <option value="Magdalena">Magdalena</option>
+                <option value="Meta">Meta</option>
+                <option value="Nariño">Nariño</option>
+                <option value="Norte de Santander">Norte de Santander</option>
+                <option value="Putumayo">Putumayo</option>
+                <option value="Quindío">Quindío</option>
+                <option value="Risaralda">Risaralda</option>
+                <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                <option value="Santander">Santander</option>
+                <option value="Sucre">Sucre</option>
+                <option value="Tolima">Tolima</option>
+                <option value="Valle del Cauca">Valle del Cauca</option>
+                <option value="Vaupés">Vaupés</option>
+                <option value="Vichada">Vichada</option>
+
+            </select>
+        </div>
+        <div class="form-row">
+            <label for="pais">Tipo de sangre:</label>
+            <select id="pais" name="pais">
+                <option value="argentina">O</option>
+                <option value="argentina">A</option>
+                <option value="argentina">B</option>
+                <option value="argentina">AB</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label for="pais">RH:</label>
+            <select id="pais" name="pais">
+                <option value="argentina">+</option>
+                <option value="argentina">-</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <button>Enviar</button>
+        </div>
+        <p class="alertas" id="alertas"></p>
+    </form>
+
+</div>
+
+<!--DATOS DE CONTACTO-->
+<footer>
+    <footer id="datos-de-contacto"></footer>
+    <div class="redes-sociales">
+        <a href="#" class="red-social">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="red-social">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="red-social">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="red-social">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+</footer>
+
+    
+</body>
+</html>
